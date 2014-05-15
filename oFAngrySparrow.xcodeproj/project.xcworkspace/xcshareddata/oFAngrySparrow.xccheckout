@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F400F798-AD91-41EC-9464-24E9F5BE0B0B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>oFAngrySparrow</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4E6B44BA-892A-4FE7-A5A7-3A7ACAF39568</key>
+		<string>https://github.com/chikashimiyama/AngrySparrow.git</string>
+		<key>E1DC5397-369D-4C4E-904C-D6B6D7A24366</key>
+		<string>https://github.com/chikashimiyama/oFAngrySparrow.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>oFAngrySparrow.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4E6B44BA-892A-4FE7-A5A7-3A7ACAF39568</key>
+		<string>../../AngrySparrow</string>
+		<key>E1DC5397-369D-4C4E-904C-D6B6D7A24366</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chikashimiyama/oFAngrySparrow.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E1DC5397-369D-4C4E-904C-D6B6D7A24366</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4E6B44BA-892A-4FE7-A5A7-3A7ACAF39568</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AngrySparrow</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1DC5397-369D-4C4E-904C-D6B6D7A24366</string>
+			<key>IDESourceControlWCCName</key>
+			<string>oFAngrySparrow</string>
+		</dict>
+	</array>
+</dict>
+</plist>
