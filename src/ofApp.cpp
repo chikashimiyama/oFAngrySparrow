@@ -2,6 +2,9 @@
 
 using namespace AngrySparrow;
 
+
+ofApp::ofApp(): mod(&modVec, &freqVec), carrier(&targetVec, &modVec), multiplier(&modVec, &adderVec), adder(&modVec, &multiVec){}
+
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofBackground(34, 34, 34);
@@ -31,8 +34,8 @@ void ofApp::setup(){
     targetVec.assign(vectorSize, 0);
     freqVec.assign(vectorSize, 221);
     modVec.assign(vectorSize, 0);
-    multiVec.assign(vectorSize, 440);
-    adderVec.assign(vectorSize, 880);
+    multiVec.assign(vectorSize, 450);
+    adderVec.assign(vectorSize, 2280);
     
     // order of execution
     dsp.addToChain(&mod);
@@ -164,19 +167,12 @@ void ofApp::audioOut(float * output, int bufferSize, int nChannels){
 	float leftScale = 1 - pan;
 	float rightScale = pan;
     
-    vector<float> modVector = mod.getNextVector();
-    vector<float>::iterator it = modVector.begin();
-    while(it != modVector.end()){
-        *it = *it * 440 + targetFrequency;
-        it++;
-    }
-    carrier.setFrequencyVectorPtr(&modVector);
-    vector<float>out = carrier.getNextVector();
+    dsp.run();
 
     for (int i = 0; i < bufferSize; i++){
         
-        lAudio[i] = output[i*nChannels    ] = out[i] * 0.5 * leftScale;
-        rAudio[i] = output[i*nChannels + 1] = out[i] * 0.5 * rightScale;
+        lAudio[i] = output[i*nChannels    ] = targetVec[i] * 0.5 * leftScale;
+        rAudio[i] = output[i*nChannels + 1] = targetVec[i] * 0.5 * rightScale;
     }
     
 }

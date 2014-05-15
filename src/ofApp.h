@@ -7,7 +7,7 @@ class ofApp : public ofBaseApp{
 
     
 public:
-    
+    ofApp();
     void setup();
     void update();
     void draw();
@@ -36,10 +36,11 @@ public:
     vector <float> rAudio;
     
     std::vector<float> targetVec, freqVec, modVec, adderVec, multiVec;
-    AngrySparrow::Sine mod(&modVec, &freqVec);
-    AngrySparrow::Sine carrier(&targetVec, &modVec);
-    AngrySparrow::Multiplier multiplier(&modVec, &adderVec);
-    AngrySparrow::Adder adder(&modVec, &multiVec);
+    AngrySparrow::Sine mod;
+    AngrySparrow::Sine carrier;
+    AngrySparrow::Multiplier multiplier;
+    AngrySparrow::Adder adder;
+    
     AngrySparrow::DSP dsp;
     
     //------------------- for the simple sine wave synthesis
