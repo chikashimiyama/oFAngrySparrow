@@ -1,0 +1,3 @@
+[submodule "AngrySparrow"]
+	path = AngrySparrow
+	url = https://github.com/chikashimiyama/AngrySparrow.git
