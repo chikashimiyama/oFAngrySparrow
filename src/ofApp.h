@@ -4,7 +4,6 @@
 #include "AngrySparrow.h"
 
 class ofApp : public ofBaseApp{
-
     
 public:
     ofApp();

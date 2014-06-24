@@ -2,7 +2,6 @@
 
 using namespace AngrySparrow;
 
-
 ofApp::ofApp(): mod(&modVec, &freqVec), carrier(&targetVec, &modVec), multiplier(&modVec, &adderVec), adder(&modVec, &multiVec){}
 
 //--------------------------------------------------------------
